@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intiial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="content/favicon.png">
+    <script src="scripts.js"></script>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            background-image: url("content/shows.jpg");
+            background-size: cover;
+            text-align:center;
+        }
+        .eventscontainer {
+            text-align: center;
+            min-height: 700px;
+            min-width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+ 
+        }
+        .fb-page{
+        }
+        .dropbtn {min-width:350px;}
+        .dropdown-content {min-width: 350px;}
+        @media screen and (min-width:550px) {
+            .eventscontainer {display: inline;}
+            .eventssmall {display: none;}
+        }
+        @media screen and (max-width:550px) {
+            .eventscontainer{display:none;}
+            .eventssmall {display: inline;}
+        }
+        .eventscontainer a, .eventssmall a{
+            font-size: 0px;
+        }
+    </style> 
+    <title>Shows - Blight Town</title>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="YTKHSkTs"></script>
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="https://slugapparel.com/collections/blighttown-collection" target="_blank">MERCH</a>
+        <a href="shows.html">SHOWS</a>
+        <a href="music.html">MUSIC</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+    <div class="dropdown">
+        <button onclick="showDropdown()" class="dropbtn">MENU</button>
+        <div id="Dropdown" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="https://slugapparel.com/collections/blighttown-collection" target="_blank">Merch</a>
+            <a href="shows.html">Shows</a>
+            <a href="music.html">Music</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="eventscontainer">
+        <div class="fb-page"
+             data-href="https://www.facebook.com/blighttownuk/"
+             data-tabs="events"
+             data-width="500"
+             data-height="700"
+             data-small-header="true"
+             data-adapt-container-width="true"
+             data-hide-cover="false"
+             data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/blighttownuk/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/blighttownuk/">Blight Town</a></blockquote>
+        </div>
+    </div>
+    <div class="eventssmall">
+        <div class="fb-page"
+             data-href="https://www.facebook.com/blighttownuk/"
+             data-tabs="events"
+             data-width="350"
+             data-height="700"
+             data-small-header="true"
+             data-adapt-container-width="true"
+             data-hide-cover="false"
+             data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/blighttownuk/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/blighttownuk/">Blight Town</a></blockquote>
+        </div>
+    </div>
+</body>
+</html>

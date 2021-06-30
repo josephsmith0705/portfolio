@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.domain.com [NC]
+RewriteRule ^(.*)$ http://domain.com/$1 [L,R=301,NC]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intiial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="content/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts.js"></script>
+    <style>
+        .slidebg {
+            z-index: 9;
+            background-position: 50% 70%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            backface-visibility: hidden;
+            animation: slideBg 18s linear infinite 0s;
+            animation-timing-function: ease-in-out;
+            background-image: url("content/1.jpg");
+            min-height: 100%;
+            height: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        
+        @keyframes slideBg {
+            0% {
+                background-image: url("content/1.jpg");
+            }
+            15% {
+                background-image: url("content/1.jpg");
+            }
+            20% {
+                background-image: url("content/2.jpg");
+            }
+            31% {
+                background-image: url("content/2.jpg");
+            }
+            36% {
+                background-image: url("content/3.jpg");
+            }
+            47% {
+                background-image: url("content/3.jpg");
+            }
+            52% {
+				background-position: 50% 68%;
+                background-image: url("content/4.jpg");
+            }
+            63% {
+				background-position: 50% 67.9%;
+                background-image: url("content/4.jpg");
+            }
+            68% {
+                background-image: url("content/5.jpg");
+            }
+            81% {
+                background-image: url("content/5.jpg");
+            }
+            86% {
+                background-image: url("content/6.jpg");
+            }
+            97% {
+                background-image: url("content/6.jpg");
+            }
+        }
+        .links {
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .links a {
+			text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+            text-decoration: none;
+            color: white;
+            font-size:150%;
+            padding: 50px 2vw;
+        }
+        .links a:hover {
+            color: lightgrey;
+        }
+    </style>
+    <title>Blight Town</title>
+</head>
+<body>
+    <div class="slidebg">
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="https://slugapparel.com/collections/blighttown-collection" target="_blank">MERCH</a>
+            <a href="shows.html">SHOWS</a>
+            <a href="music.html">MUSIC</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="dropdown">
+            <button onclick="showDropdown()" class="dropbtn">MENU</button>
+            <div id="Dropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="https://slugapparel.com/collections/blighttown-collection" target="_blank">Merch</a>
+                <a href="shows.html">Shows</a>
+                <a href="music.html">Music</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="links">
+            <a href="mailto:blighttownuk@outlook.com" class="fa fa-envelope"></a>
+            <a href="https://www.facebook.com/blighttownuk/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/blighttownuk/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/channel/UCK7o-hJTYzGKCC784UfzMMA/featured" target="_blank" class="fa fa-youtube-play"></a>
+            <a href="https://open.spotify.com/artist/3ithyOukGfKGBz6zc3UAV0?si=Sz7dd7iiTb2ExsnIVTefmA&nd=1" target="_blank" class="fa fa-spotify"></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+﻿.dropbtn {
+    display: none;
+}
+body {
+    margin: 0px;
+    background-color: black;
+    text-align: center;
+}
+h1, p, a {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+a {
+    font-size: 130%;
+    text-shadow: 0.5px 0 0 #000, 0 -0.5px 0 #000, 0 0.5px 0 #000, -0.5px 0 0 #000;
+}
+.navbar {
+    overflow: hidden;
+    padding: 0px 25%;
+}
+    .navbar a {
+        float: left;
+        width: 20%;
+        padding: 4% 0px 3% 0px;
+    }
+        .navbar a:hover {color: lightgrey ;}
+
+        @media screen and (max-width:768px){
+            .navbar a{display:none;}
+            .dropbtn {display: block;}
+        }
+.dropbtn {
+    color: white;
+    padding: 4% 0px;
+    font-size: 150%;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    background-color: #000000;
+    border-color: transparent;
+}
+    .dropbtn:hover {color: lightgrey;}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.dropdown-content {
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+}
+    .dropdown-content a {
+        display: block;
+        padding: 0px 0px 15px;
+    }
+        .dropdown-content a:hover {color: lightgrey;}
+
+.show {display:block;}
+
+
