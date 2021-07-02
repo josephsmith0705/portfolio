@@ -1,0 +1,72 @@
+:root{
+    --main-grey: #403F4C;
+    --alt-grey: #7C9EB2;
+    --main-white: #D7F9F1;
+    --main-blue: #351eff;
+    --alt-blue: #6b5bff;
+    --animation-length: 0.5s;
+}
+
+body{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background: var(--main-white);
+}
+
+#calculator{
+    width: 55%;
+    margin: auto;
+}
+
+#display{
+    border: 1px solid var(--alt-grey);
+    padding: 20px 0;
+    margin: 2px 0;
+    background-color: var(--main-white);
+}
+
+#calculator-grid{
+    display: grid;
+    grid-template-columns: 24% 24% 24% auto;
+    grid-gap: 2px;
+}
+
+#calculator-grid button{
+    border-radius: 0;
+    border: 1px solid var(--alt-grey);
+    padding: 20px 0;
+    font-size: 20px;
+    background-color: var(--main-white);
+}
+
+#calculator-grid button:hover{
+    animation-name: fadewhitealtg;
+    animation-duration: var(--animation-length);
+    background-color: var(--alt-grey);
+    cursor: pointer;
+
+}
+
+@keyframes fadewhitealtg {
+    0% {background-color: var(--main-white);}
+    100% {background-color: var(--alt-grey);}
+}
+
+#equals{
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    background: var(--alt-blue) !important;
+    color: var(--main-white);
+}
+
+#equals:hover{
+    animation-name: fadealtmainblue;
+    animation-duration: var(--animation-length);
+    background-color: var(--main-blue) !important;
+}
+
+@keyframes fadealtmainblue{
+    0% {background-color: var(--alt-blue);}
+    100% {background-color: var(--main-blue);}
+}
