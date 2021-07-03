@@ -13,16 +13,21 @@ body{
     background: var(--main-white);
 }
 
+header{
+    font-size: 175%;
+}
+
 #calculator{
-    width: 55%;
+    width: 500px;
     margin: auto;
 }
 
 #display{
     border: 1px solid var(--alt-grey);
-    padding: 20px 0;
+    padding: 20px 0; /*Normally 20px 0*/
     margin: 2px 0;
     background-color: var(--main-white);
+    font-size: 30px; /*Normally 20px*/
 }
 
 #calculator-grid{
@@ -34,8 +39,8 @@ body{
 #calculator-grid button{
     border-radius: 0;
     border: 1px solid var(--alt-grey);
-    padding: 20px 0;
-    font-size: 20px;
+    padding: 20px 0; /*Normally 20px 0*/
+    font-size: 25px; /*Normally 20px*/
     background-color: var(--main-white);
 }
 
@@ -69,4 +74,20 @@ body{
 @keyframes fadealtmainblue{
     0% {background-color: var(--alt-blue);}
     100% {background-color: var(--main-blue);}
+}
+
+@media only screen and (max-width: 500px){
+    #display{
+        padding: 20px 0; /*Normally 20px 0*/
+        font-size: 20px; /*Normally 20px*/
+    }
+
+    #calculator{
+        width: 90%;
+    }
+
+    #calculator-grid button{
+        padding: 20px 0; /*Normally 20px 0*/
+        font-size: 20px; /*Normally 20px*/
+    }
 }
