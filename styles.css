@@ -73,6 +73,7 @@ h2 {
 .project-tile {
     margin: 20px auto;
     width: 85%;
+    max-width: 260px;
     background: var(--main-white);
     text-decoration: none;
     box-shadow: 0px 1px 3px;
