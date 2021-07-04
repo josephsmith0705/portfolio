@@ -155,6 +155,28 @@ h2 {
     100%{color: var(--alt-blue);}
 }
 
+#dropdown-navbar{
+    position: fixed;
+    display: none;
+    top: 45px;
+    padding: 5px 20px 10px 10px;
+    background-color: var(--alt-blue);
+    border-radius: 0 0 25%;
+    
+}
+
+.dd-navlink{
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    color: var(--main-black);
+    font-size: 20px;
+}
+
+.dd-navlink:hover{
+    font-size: 22px;
+}
+
 #portfoliorepo{
     width: 75%;
     margin: auto;
@@ -289,3 +311,5 @@ h2 {
     padding: 0 5px;
     color: var(--main-white);  
 }
+
+.show {display:block;}
