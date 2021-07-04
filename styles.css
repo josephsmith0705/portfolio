@@ -162,7 +162,7 @@ h2 {
     padding: 5px 20px 10px 10px;
     background-color: var(--alt-blue);
     border-radius: 0 0 25%;
-    
+    z-index: 8;
 }
 
 .dd-navlink{
