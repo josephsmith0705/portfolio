@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font: 'Cutive Mono', monospace;
+    --weight-regular: 100;
+    --weight-bold: 300;
+    --size-h1: 2rem; 
+    --size-h2: 1.5rem;
+    --size-h3: 1.25rem;
+    --animation-duration: 0.5s;
+    --main-black: #0a0a0a;
+    --main-grey: #0a0a0aea;
+    --dark-accent: #6b6b6b;
+    --main-white: #F0F5FA;
+    --light-blue: #BDD4E7;
+    --alt-blue: #96BAD9;
+}
+
+
+body {
+    background: var(--main-black);
+    background-image: url("img/icon-small.png");
+    background-repeat: repeat;
+    background-size: 150px;
+    background-position: 0px 0px;
+    animation: bgScroll 5s linear infinite;
+    font-family: var(--main-font);
+    margin: 0;
+    width: 100%;
+    overflow: overlay;
+    text-align: center;
+    height: 100%;
+}
+
+.dd-navlink{
+    text-decoration: none;
+    color: var(--main-white);
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 3px white;
+}
+
+.navlink{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--main-white);
+    font-size: 25px;
+    width: 19%;
+    padding: 20px 0;
+    justify-content: center;
+    max-width: 225px;
+    margin: 0;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.349);
+}
+/*
+.navlink:hover, #contact-links a:hover{
+    color: var(--dark-accent);
+}*/
+
+#bg-img{
+    width: 300px;
+}
+
+#header-img{
+    position: relative;
+    top: 21.5px;
+    margin: auto;
+    height: 31px;
+    display: none;
+}
+
+#nav-toggle{
+    position: fixed;
+    top: 15px;
+    left: 16px;
+    display: none;
+    background: transparent;
+    padding: 4px 6px 2px;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    float: left;
+}
+
+#menu-button{
+    float: left;
+    color: var(--main-white);
+    font-size: 35px;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.349);
+}
+
+#dropdown-navbar{
+    position: fixed;
+    left: 17px;
+    top: 75px;
+    padding: 5px 10px 10px 5px;
+    opacity: 0;
+}
+
+#navbar{
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    top: 5px;
+    left: 0;
+}
+
+#contact-links{
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+}
+
+#contact-links a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--main-white);
+    font-size: 30px;
+    margin: 0 2%;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.349);
+}
+
+@media screen and (max-width: 780px){
+    #navbar{
+        display: none;
+    }
+    #nav-toggle{
+        display: inline;
+    }
+    #header-img{
+        display: inline;
+    }
+    .navlink:hover, #contact-links a:hover{
+        color: var(--main-white);
+    }
+	#contact-links{
+		bottom: 20px;
+	}
+    #contact-links a{
+        font-size: 25px;
+    }
+}
+
+
+@keyframes bgScroll{
+    from {background-position: 0 0;}
+    to {background-position: 150px -150px;}
+}
+
+@keyframes bgColours{
+    0% {background-color: var(--main-black);}
+    50% {background-color: var(--main-grey);}
+    100% {background-color: var(--main-black);}
+}
+
+@keyframes drop{
+    0% {left: -85px;}
+    40% {left: 19px;}
+    60% {left: 15px;}
+    100% {left: 17px;}
+}
+
+@keyframes fold{
+    from {left: 17px;}
+    to {left: -85px;}
+}
+
+@keyframes hover{
+    from {color: var(--main-white);}
+    to {color: var(--dark-accent);}
+}
+
+@keyframes unhover{
+    from {color: var(--dark-accent);}
+    to {color: var(--main-white);}
+}
